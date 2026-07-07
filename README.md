@@ -61,7 +61,28 @@ python3 test_tcp_arm.py
 ```bash
 roslaunch readTest read_all.launch
 
-rosrun readTest dual_piper_tcp_teleop_debug.py   /_tcp_ip:=192.168.4.1   \_tcp_port:=10000   _enable_on_start:=true   _max_step_rad:=0.005   _piper_margin_rad:=0.10   _left_j6_channel:=7   _right_j6_channel:=15   _left_gripper_channel:=8   _right_gripper_channel:=16   _gripper_input_open_deg:=0   _gripper_input_close_deg:=15   _left_gripper_input_open_deg:=0   _left_gripper_input_close_deg:=15   _right_gripper_input_open_deg:=0   _right_gripper_input_close_deg:=-15   _left_gripper_output_open:=0.0   _left_gripper_output_close:=0.09   _right_gripper_output_open:=0.0   _right_gripper_output_close:=0.09   _gripper_effort:=1.0   _debug_period:=0.5
+rosrun readTest dual_piper_tcp_teleop_debug.py \
+  _tcp_ip:=192.168.4.1 \
+  _tcp_port:=10000 \
+  _enable_on_start:=true \
+  _max_step_rad:=0.005 \
+  _piper_margin_rad:=0.10 \
+  _left_j6_channel:=7 \
+  _right_j6_channel:=15 \
+  _left_gripper_channel:=8 \
+  _right_gripper_channel:=16 \
+  _gripper_input_open_deg:=0 \
+  _gripper_input_close_deg:=15 \
+  _left_gripper_input_open_deg:=0 \
+  _left_gripper_input_close_deg:=15 \
+  _right_gripper_input_open_deg:=0 \
+  _right_gripper_input_close_deg:=-15 \
+  _left_gripper_output_open:=0.0 \
+  _left_gripper_output_close:=0.09 \
+  _right_gripper_output_open:=0.0 \
+  _right_gripper_output_close:=0.09 \
+  _gripper_effort:=1.0 \
+  _debug_period:=0.5
 ```
 
 **ROS Run Command Parameters**
