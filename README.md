@@ -8,6 +8,7 @@ The main teleoperation script is located at:
 src/readTest/scripts/dual_piper_tcp_teleop_debug.py
 ```
 
+Channel Mapping
 
 ```bash
 | Piper Arm | Piper Joint | TCP Channel |
@@ -27,6 +28,14 @@ src/readTest/scripts/dual_piper_tcp_teleop_debug.py
 | Right     | joint6      | ch15        |
 | Right     | gripper     | ch16        |
 
+Run Procedures
+
+Set Teleperation Robotic Arm's Servo motor to 0
+// File path：
+
+```bash
+python3 test_tcp_arm.py
+```
 
 ```bash
 rosrun readTest dual_piper_tcp_teleop_debug.py \
@@ -47,3 +56,4 @@ rosrun readTest dual_piper_tcp_teleop_debug.py \
   _right_gripper_output_close:=0.07 \
   _gripper_effort:=1.0 \
   _debug_period:=0.5
+```
