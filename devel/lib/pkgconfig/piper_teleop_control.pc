@@ -1,0 +1,8 @@
+prefix=/home/robotcar/catkin_ws/devel
+
+Name: piper_teleop_control
+Description: Description of piper_teleop_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

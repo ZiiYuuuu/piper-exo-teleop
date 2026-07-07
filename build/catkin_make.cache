@@ -1,0 +1,2 @@
+dual_piper_control:piper_ros/src/piper:piper_ros/src/piper_description:piper_ros/src/piper_msgs:piper_ros/src/piper_noetic:piper_teleop_control:readTest:teleop_arm
+-DCATKIN_DEVEL_PREFIX=/home/robotcar/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robotcar/catkin_ws/install -G Unix Makefiles

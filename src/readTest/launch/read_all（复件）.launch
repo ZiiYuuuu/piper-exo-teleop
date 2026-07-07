@@ -1,0 +1,17 @@
+<launch>
+    <node pkg="readTest" type="unified_monitor.py" name="unified_monitor_node" output="screen"/>
+
+    <group ns="left_arm">
+        <include file="$(find piper)/launch/start_single_piper.launch">
+            <arg name="can_port" value="can0" />
+            <arg name="auto_enable" value="false"/>
+        </include>
+    </group>
+
+    <group ns="right_arm">
+        <include file="$(find piper)/launch/start_single_piper.launch">
+            <arg name="can_port" value="can1" />
+            <arg name="auto_enable" value="false"/>
+        </include>
+    </group>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/robotcar/catkin_ws/devel
+
+Name: dual_piper_control
+Description: Description of dual_piper_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

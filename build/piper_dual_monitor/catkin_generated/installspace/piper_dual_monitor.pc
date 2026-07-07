@@ -1,0 +1,8 @@
+prefix=/home/robotcar/catkin_ws/install
+
+Name: piper_dual_monitor
+Description: Description of piper_dual_monitor
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy sensor_msgs std_msgs

@@ -1,0 +1,8 @@
+prefix=/home/robotcar/catkin_ws/devel
+
+Name: teleop_arm
+Description: Description of teleop_arm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

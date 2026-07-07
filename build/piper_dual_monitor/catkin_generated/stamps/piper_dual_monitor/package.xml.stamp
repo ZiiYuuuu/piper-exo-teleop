@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>piper_dual_monitor</name>
+  <version>0.0.1</version>
+  <description>
+    Unified monitor: 16-channel telemetry-arm raw servo pulses + dual-arm
+    PIPER real-time joint feedback (subscribes to /joint_states_single,
+    not the command-only /joint_states topic).
+  </description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+</package>

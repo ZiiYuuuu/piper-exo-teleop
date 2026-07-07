@@ -1,0 +1,19 @@
+source /opt/ros/noetic/setup.bash
+roscore
+
+# 准备CAN
+# 激活 can0 和 can1，波特率 1M
+sudo ip link set can0 up type can bitrate 1000000
+sudo ip link set can1 up type can bitrate 1000000
+
+
+开机械臂
+roslaunch piper start_single_piper.launch
+
+
+单边跟随
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun piper_teleop_control teleop_to_piper_fixed.py
+
+

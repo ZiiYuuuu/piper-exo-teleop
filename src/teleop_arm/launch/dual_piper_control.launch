@@ -1,0 +1,17 @@
+<launch>
+    <node pkg="teleop_arm" type="teleop_joint_publisher.py" name="teleop_joint_publisher" output="screen"/>
+
+    <group ns="left_arm">
+        <remap from="/joint_states" to="/left_arm/joint_states" />
+        <include file="$(find piper)/launch/start_single_piper.launch">
+            <arg name="can_port" value="can0" />
+        </include>
+    </group>
+
+    <group ns="right_arm">
+        <remap from="/joint_states" to="/right_arm/joint_states" />
+        <include file="$(find piper)/launch/start_single_piper.launch">
+            <arg name="can_port" value="can1" />
+        </include>
+    </group>
+</launch>
