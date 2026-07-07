@@ -31,9 +31,9 @@ src/readTest/scripts/dual_piper_tcp_teleop_debug.py
 
 ## Run Procedures
 
-Turn on Robot, Plug teleoperation arm
+Turn on the robot, plug the teleoperation arm
 
-**Cnnect to WIFI VKARM_CONTROLLER**
+**Connect to WIFI VKARM_CONTROLLER**
 
 password： 12345678
 
@@ -46,13 +46,15 @@ sudo ip link set can0 up type can bitrate 1000000
 sudo ip link set can1 up type can bitrate 1000000
 ```
 
-Set Teleperation Robotic Arm's Servo motor to 0, need to be set everytime after turn the power back on
+Set the Teleoperation Robotic Arm's Servo motor to 0, need to be set every time after turning the power back on
 
 - *File path：~/catkin_ws/src/testFile*
 
 ```bash
 python3 test_tcp_arm.py
 ```
+Sample Output
+<img width="1277" height="909" alt="d87603d3f8556946dc36a8bf28997bed" src="https://github.com/user-attachments/assets/b932b6a9-1fb5-4b37-897c-91c9a622210a" />
 
 Set IP connection
 
@@ -160,7 +162,7 @@ Gripper Parameters
   _right_gripper_output_open:=0.09
   _right_gripper_output_close:=0.0
   ```
-  2. reverse the input direction by changing the sign of input_close_deg
+  2. Reverse the input direction by changing the sign of input_close_deg
   ```bash
   _right_gripper_input_close_deg:=15
   ```
@@ -171,7 +173,7 @@ Gripper Parameters
 
 - If the gripper only moves after bending the exoskeleton gripper very far
 
-  Reduce the absolute value of the close input angle.
+  Reduce the absolute value of the closed input angle.
   
   ```bash
   _left_gripper_input_close_deg:=10
