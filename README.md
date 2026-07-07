@@ -40,9 +40,9 @@ sudo ip link set can0 up type can bitrate 1000000
 sudo ip link set can1 up type can bitrate 1000000
 ```
 
-Set Teleperation Robotic Arm's Servo motor to 0
+Set Teleperation Robotic Arm's Servo motor to 0, need to be set everytime after turn the power back on
 
-*File path：~/catkin_ws/src/testFile*
+- *File path：~/catkin_ws/src/testFile*
 
 ```bash
 python3 test_tcp_arm.py
@@ -50,7 +50,7 @@ python3 test_tcp_arm.py
 
 Set IP connection
 
-*File path：~/catkin_ws/src/testFile*
+- *File path：~/catkin_ws/src/testFile*
 
 ```bash
 python3 test_tcp_arm.py
@@ -115,7 +115,7 @@ Gripper Parameters
 | `_gripper_effort`                | Gripper effort value. This only affects force if the Piper control node reads `JointState.effort[6]`.                                 |              `1.0` |   `1.0` |
 
 
-- How to Tune the Gripper
+- **How to Tune the Gripper**
 
 - If the gripper direction is reversed
   
