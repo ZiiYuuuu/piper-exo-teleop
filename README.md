@@ -6,10 +6,10 @@ The main teleoperation script is located at:
 
 ```bash
 src/readTest/scripts/dual_piper_tcp_teleop_debug.py
+```
 
 
-
-
+```bash
 | Piper Arm | Piper Joint | TCP Channel |
 | --------- | ----------- | ----------- |
 | Left      | joint1      | ch1         |
@@ -28,7 +28,7 @@ src/readTest/scripts/dual_piper_tcp_teleop_debug.py
 | Right     | gripper     | ch16        |
 
 
-
+```bash
 rosrun readTest dual_piper_tcp_teleop_debug.py \
   _tcp_ip:=192.168.4.1 \
   _tcp_port:=10000 \
