@@ -31,6 +31,12 @@ src/readTest/scripts/dual_piper_tcp_teleop_debug.py
 
 ## Run Procedures
 
+Turn on Robot, Plug teleoperation arm
+
+**Cnnect to WIFI VKARM_CONTROLLER**
+
+password： 12345678
+
 ### Preparation
 
 Activate can0 and can1, baud 1M
@@ -58,9 +64,13 @@ python3 test_tcp_arm.py
 
 ### Main Program Running Procedure
 
+Terminal 1
 ```bash
 roslaunch readTest read_all.launch
+```
 
+Terminal 2
+```bash
 rosrun readTest dual_piper_tcp_teleop_debug.py \
   _tcp_ip:=192.168.4.1 \
   _tcp_port:=10000 \
