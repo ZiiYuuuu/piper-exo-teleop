@@ -43,12 +43,14 @@ password： 12345678
 
 ### Preparation
 
-Activate can0 and can1, baud 1M
+**Activate can0 and can1, baud 1M**
 
 ```bash
 sudo ip link set can0 up type can bitrate 1000000
 sudo ip link set can1 up type can bitrate 1000000
 ```
+
+**Set 0**
 
 Set the Teleoperation Robotic Arm's Servo motor to 0; this needs to be set every time after turning the power back on
 
@@ -67,7 +69,7 @@ Under the left side, there is a USB-C Port as a Serial Port (didn't use in this 
 - Sample Output
 <img width="1277" height="909" alt="d87603d3f8556946dc36a8bf28997bed" src="https://github.com/user-attachments/assets/b932b6a9-1fb5-4b37-897c-91c9a622210a" />
 
-Set IP connection
+**Set IP connection**
 
 - *File path：~/catkin_ws/src/testFile*
 
