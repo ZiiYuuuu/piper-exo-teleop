@@ -1,6 +1,10 @@
 # Piper Dual Arm TCP Teleoperation
 
 This repository contains the full ROS catkin workspace for controlling dual Piper robot arms using a TCP-based exoskeleton mini arm.
+<img width="2185" height="1284" alt="9dcd94558a7bd98ab97d2922c056bce0" src="https://github.com/user-attachments/assets/a9da4242-585d-4c62-a84d-6f02d6776846" />
+
+**Hardware Setup**
+<img width="5371" height="4028" alt="1ecd2cfccf44e34cfd5410665d62ac6b" src="https://github.com/user-attachments/assets/b4480c21-dc2c-4b84-8783-e0abd1e8bcfb" />
 
 The main teleoperation script is located at:
 
@@ -46,13 +50,19 @@ sudo ip link set can0 up type can bitrate 1000000
 sudo ip link set can1 up type can bitrate 1000000
 ```
 
-Set the Teleoperation Robotic Arm's Servo motor to 0, need to be set every time after turning the power back on
+Set the Teleoperation Robotic Arm's Servo motor to 0; this needs to be set every time after turning the power back on
 
 - *File path：~/catkin_ws/src/testFile*
 
 ```bash
 python3 test_tcp_arm.py
 ```
+Hardware Setup
+<img width="1702" height="1276" alt="f63f3a0554160e09cf2f53c533bc25ec" src="https://github.com/user-attachments/assets/68a699cd-e9a2-4b97-8b08-dc9c63c1ba62" />
+
+Under the left side, there is a USB-C Port as a Serial Port (didn't use in this method)
+<img width="1918" height="1278" alt="155e9b025d7d2cc843932529a1489239" src="https://github.com/user-attachments/assets/1c2b2256-10c0-46c8-a293-4243bb24670a" />
+
 Sample Output
 <img width="1277" height="909" alt="d87603d3f8556946dc36a8bf28997bed" src="https://github.com/user-attachments/assets/b932b6a9-1fb5-4b37-897c-91c9a622210a" />
 
@@ -66,12 +76,12 @@ python3 test_tcp_arm.py
 
 ### Main Program Running Procedure
 
-Terminal 1
+Step 1 - Terminal 1
 ```bash
 roslaunch readTest read_all.launch
 ```
 
-Terminal 2
+Step 2 - Terminal 2
 ```bash
 rosrun readTest dual_piper_tcp_teleop_debug.py \
   _tcp_ip:=192.168.4.1 \
@@ -96,6 +106,22 @@ rosrun readTest dual_piper_tcp_teleop_debug.py \
   _gripper_effort:=1.0 \
   _debug_period:=0.5
 ```
+Sample Outputs
+Step 1
+<img width="960" height="322" alt="GIF_20260707203156107" src="https://github.com/user-attachments/assets/0dbf756c-4d65-4b9d-b0d7-58df922a0604" />
+Step 2 
+<img width="960" height="322" alt="GIF_20260707203037472" src="https://github.com/user-attachments/assets/d04e4d55-bb82-4d6a-8f48-3d9a3dabe1d6" />
+
+Robot Action
+Master & Slave Arm
+<img width="960" height="540" alt="GIF_20260707205036550" src="https://github.com/user-attachments/assets/7220fdb7-1685-4bc8-921a-28a88df208c3" />
+
+Different Speed
+<img width="960" height="540" alt="GIF_20260707205355382" src="https://github.com/user-attachments/assets/a7ee4ce0-3253-4010-af94-110bb2dfd213" />
+
+Gripper
+<img width="540" height="960" alt="GIF_20260707210548628" src="https://github.com/user-attachments/assets/3aaa51b1-a54d-4761-89bb-f6b9eb95303d" />
+
 
 **ROS Run Command Parameters**
 General Runtime Parameters
