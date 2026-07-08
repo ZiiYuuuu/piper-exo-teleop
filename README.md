@@ -57,13 +57,14 @@ Set the Teleoperation Robotic Arm's Servo motor to 0; this needs to be set every
 ```bash
 python3 test_tcp_arm.py
 ```
-Hardware Setup
+- Hardware Setup
 <img width="1702" height="1276" alt="f63f3a0554160e09cf2f53c533bc25ec" src="https://github.com/user-attachments/assets/68a699cd-e9a2-4b97-8b08-dc9c63c1ba62" />
 
 Under the left side, there is a USB-C Port as a Serial Port (didn't use in this method)
+
 <img width="1918" height="1278" alt="155e9b025d7d2cc843932529a1489239" src="https://github.com/user-attachments/assets/1c2b2256-10c0-46c8-a293-4243bb24670a" />
 
-Sample Output
+- Sample Output
 <img width="1277" height="909" alt="d87603d3f8556946dc36a8bf28997bed" src="https://github.com/user-attachments/assets/b932b6a9-1fb5-4b37-897c-91c9a622210a" />
 
 Set IP connection
