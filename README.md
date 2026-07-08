@@ -106,24 +106,35 @@ rosrun readTest dual_piper_tcp_teleop_debug.py \
   _gripper_effort:=1.0 \
   _debug_period:=0.5
 ```
-Sample Outputs
+**Sample Outputs**
+
 Step 1
+
 <img width="960" height="322" alt="GIF_20260707203156107" src="https://github.com/user-attachments/assets/0dbf756c-4d65-4b9d-b0d7-58df922a0604" />
+
 Step 2 
+
 <img width="960" height="322" alt="GIF_20260707203037472" src="https://github.com/user-attachments/assets/d04e4d55-bb82-4d6a-8f48-3d9a3dabe1d6" />
 
-Robot Action
+**Robot Action**
+
 Master & Slave Arm
+
 <img width="960" height="540" alt="GIF_20260707205036550" src="https://github.com/user-attachments/assets/7220fdb7-1685-4bc8-921a-28a88df208c3" />
 
+
 Different Speed
+
 <img width="960" height="540" alt="GIF_20260707205355382" src="https://github.com/user-attachments/assets/a7ee4ce0-3253-4010-af94-110bb2dfd213" />
 
+
 Gripper
+
 <img width="540" height="960" alt="GIF_20260707210548628" src="https://github.com/user-attachments/assets/3aaa51b1-a54d-4761-89bb-f6b9eb95303d" />
 
 
 **ROS Run Command Parameters**
+
 General Runtime Parameters
 
 | Parameter           | Description                                                                                                  |       Default |       Example |
